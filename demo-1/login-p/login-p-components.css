@@ -1,0 +1,52 @@
+
+.login-p .header{
+	margin-bottom: 5rem;
+}
+.login-p .main{
+	display: flex;
+}
+.longin-p .main .login-bx{
+
+}
+.login-bx-id, .login-bx-pw{
+	padding-bottom: 5px;
+	border-bottom: 1px solid #AAA;
+}
+.chk-bx{
+	font-size: 0.75rem;
+	margin-bottom: 5rem;
+}
+.chk-bx input{
+	width: 18px;
+	height: 18px;
+}
+.chk-bx input:hover{
+	background-color: #AAA;
+}
+.chk-bx span{
+	position: relative;
+    top: -5px;
+    right: -5px;
+}
+.login-bt{
+	background-color: #EEE;
+	height: 2rem;
+	text-transform: uppercase;
+	position: relative;
+}
+.login-bt a{
+    padding-top: 8px;
+    padding-inline-start: 70px;
+    padding-bottom: 6px;
+    color: black;
+}
+.login-bt:hover a{
+	background-color: #AAA;
+	display: block;
+	color: white ;
+}
+a:link {
+	text-decoration: none;
+	display: block;
+}
+
