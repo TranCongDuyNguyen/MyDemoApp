@@ -2,6 +2,17 @@
 .login-p .header{
 	margin-bottom: 5rem;
 }
+.login-p .header .circle-border{
+	display: flex;
+	height: 120px;
+	background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(84,87,124,1) 56%, rgba(255,255,255,1) 100%); 
+	box-sizing: border-box;
+	clip-path: circle(55px at center);
+	justify-content: center;
+}
+.clip-circle{
+	clip-path: circle(50px at center);
+}
 .login-p .main{
 	display: flex;
 }
