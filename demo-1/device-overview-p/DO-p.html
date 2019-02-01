@@ -2,32 +2,164 @@
 <html>
 <head>
 	<title>device overview</title>
-	<link rel="stylesheet" type="text/css" href="DO-components.css">
+	<link rel="stylesheet" type="text/css" href="DO-p-components.css">
+	<link rel="stylesheet" type="text/css" href="DO-p-layout.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 </head>
 <body>
-	<div class="change-p-bt">
-		<input class="bt-1" type="button" onclick="location.href='#'" ></button> 	
-		<input class="bt-2" type="button" onclick="location.href='#'" ></button> 		
-	</div>
 
-	<div class="dev-rack">
-		<div class="dev-pic">
-			<img src="https://placeimg.com/100/100/any">
+	<div class="DO-p">
+
+		<div class="DO-p-wrapper">
+			<div class="heading-panel">
+				<button class="menu-icon"><i class="fas fa-bars"></i></button> 
+				<div class="title">Device Overview</div>
+				<div class="wrapper">
+					<div class="subtitle">SIEMENS</div>
+					<div class="edit-icon"><i class="fas fa-pen"></i></div>
+				</div>	
+			</div>
+
+			<div class="slide-dot">
+				<input class="dot-1" type="button" onclick="location.href='#'" ></button> 	
+				<input class="dot-2" type="button" onclick="location.href='#'" ></button> 		
+			</div>
+			<div class="dev-rack-wraper">
+				<div class="dev-rack">
+					<div class="dev-pic">
+						<img src="https://placeimg.com/100/100/any">
+					</div>
+					<div class="dev-info">
+						<div class="state"></div>
+						<div class="name-ip">
+							<div class="name">s7-1200</div>
+							<div class="ip">192.168.0.1</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="dev-rack">
+					<div class="dev-pic">
+						<img src="https://placeimg.com/100/100/any">
+					</div>
+					<div class="dev-info">
+						<div class="state"></div>
+						<div class="name-ip">
+							<div class="name">s7-1200</div>
+							<div class="ip">192.168.0.1</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="dev-rack">
+					<div class="dev-pic">
+						<img src="https://placeimg.com/100/100/any">
+					</div>
+					<div class="dev-info">
+						<div class="state"></div>
+						<div class="name-ip">
+							<div class="name">s7-1200</div>
+							<div class="ip">192.168.0.1</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="add-footer">
+				<div class="title">Add New Device</div>
+				<button class="adding"><i class="fas fa-plus"></i></button>
+			</div>			
+		</div> 
+
+		<div class="DO-p-layout">
+			<div class="heading-panel">
+				<button class="menu-icon"><i class="fas fa-bars"></i></button> 
+				<div class="title">Device Overview</div>
+				<div class="wrapper">
+					<div class="subtitle">SIEMENS</div>
+					<div class="edit-icon"><i class="fas fa-pen"></i></div>
+				</div>	
+			</div>
+			<div style="background-color:#AAA"></div>
+
+			<div class="add-footer">
+				<div class="title">Add New Device</div>
+				<button class="adding"><i class="fas fa-plus"></i></button>
+			</div>			
 		</div>
-		<div class="dev-info">
-			<div class="state"></div>
-			<div class="name-ip">
-				<div class="name">s7-1200</div>
-				<div class="ip">192.168.0.1</div>
+
+		<div class="menu-bar">
+			<div class="header">
+				<span class="title">SIEMENS</span>
+				<span class="subtitle">My App</span>
+			</div>
+
+			<div class="main">
+				<div class="title">Pages</div>
+
+				<div class="main-content">
+						<div class="icons">
+							<i class="fas fa-cloud icon"></i>
+							<i class="fas fa-chart-line icon"></i>
+							<i class="fas fa-tools icon"></i>
+							<i class="fas fa-question icon"></i>
+						</div>
+						<div class="contents">
+							<div class="content">Device Overview</div>
+							<div class="content">Control Page</div>
+							<div class="content">Settings</div>
+							<div class="content">Information</div>
+						</div>	
+				</div>
+			</div>
+			<div class="func">
+				<div class="title">Functions</div>
+				<div class="func-content">
+					<div class="icons">
+						<div class="icon"><i class="fas fa-file-import"></i></div>
+					</div>
+					<div class="contents">
+						<div class="content">Import</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer">
+				My App
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
 
-	<div class="add-footer">
-		<div class="title">Add New Device</div>
-		<button class="adding"><i class="fas fa-plus"></i></button>
-	</div>
+		mbEles = document.getElementsByClassName('menu-icon');
+		doWrapperEles = document.getElementsByClassName('DO-p-wrapper');
+		doLayoutEles = document.getElementsByClassName('DO-p-layout');
+
+		var mb  = mbEles[0];
+		var doW = doWrapperEles[0];
+		var doL = doLayoutEles[0];
+		mb.addEventListener('click',active);
+		doL.addEventListener('click',disable);
+		function active(){
+			mb.classList.add('active-menu');
+			doL.classList.add('active-DO-layout');
+			doW.classList.add('disable-DO-wrapper');
+
+			mb.classList.remove('disable-menu');
+			doL.classList.remove('disable-DO-layout');
+			doW.classList.remove('active-DO-wrapper');
+		}
+		function disable(){
+			mb.classList.add('disable-menu');
+			doL.classList.add('disable-DO-layout');
+			doW.classList.add('active-DO-wrapper');
+
+			mb.classList.remove('active-menu');
+			doL.classList.remove('active-DO-layout');
+			doW.classList.remove('disable-DO-wrapper');
+		}
+
+	</script>
 </body>
 </html>
