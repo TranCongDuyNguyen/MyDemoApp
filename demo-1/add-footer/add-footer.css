@@ -1,0 +1,18 @@
+.add-footer{
+	display: flex;
+	justify-content: flex-end;
+	background-color: #EEE;
+	height: 2rem;
+}
+.add-footer .adding{
+	background-color: #EEE;
+	margin-left: 15px;
+	border-color: unset;
+	outline: unset;
+	border-style: unset;
+	box-sizing: border-box;
+	padding-right: 10px;
+}
+.add-footer .title{
+	align-self: center;
+}

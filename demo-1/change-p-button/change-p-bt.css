@@ -1,0 +1,21 @@
+ .change-p-bt{
+	align-self: center;
+	margin-bottom: 1rem;
+}
+.change-p-bt .bt-1, .bt-2{
+	border: 1px solid #EEE;
+	background-color: #EEE;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	padding: unset;
+	outline: none;
+}
+.bt-1:hover{
+	background-color: #AAA;
+	border-color: #AAA;
+}
+.bt-2:hover{
+	background-color: #AAA;
+	border-color: #AAA;
+}

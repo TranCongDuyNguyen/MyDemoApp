@@ -10,7 +10,7 @@
 	clip-path: circle(55px at center);
 	justify-content: center;
 }
-.clip-circle{
+.login-p .clip-circle{
 	clip-path: circle(50px at center);
 }
 .login-p .main{
@@ -23,18 +23,18 @@
 	padding-bottom: 5px;
 	border-bottom: 1px solid #AAA;
 }
-.chk-bx{
+.login-p .chk-bx{
 	font-size: 0.75rem;
 	margin-bottom: 5rem;
 }
-.chk-bx input{
+.login-p .chk-bx input{
 	width: 18px;
 	height: 18px;
 }
-.chk-bx input:hover{
+.login-p .chk-bx input:hover{
 	background-color: #AAA;
 }
-.chk-bx span{
+.login-p .chk-bx span{
 	position: relative;
     top: -5px;
     right: -5px;
@@ -43,21 +43,15 @@
 	background-color: #EEE;
 	height: 2rem;
 	text-transform: uppercase;
-	position: relative;
-}
-.login-bt a{
-    padding-top: 8px;
-    padding-inline-start: 70px;
-    padding-bottom: 6px;
-    color: black;
-}
-.login-bt:hover a{
-	background-color: #AAA;
-	display: block;
-	color: white ;
-}
-a:link {
 	text-decoration: none;
-	display: block;
+	padding: 10px 65px 10px 65px;
 }
-
+.login-bt:hover{
+	background-color: #AAA;
+	color: white;
+	transition: all 0.3s;
+}
+.login-bt:active{
+	background-color: #575077;
+	transition: all 0.3s;
+}
