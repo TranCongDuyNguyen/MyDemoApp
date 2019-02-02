@@ -1,22 +1,16 @@
 .DO-p{
 	display: grid;
 	grid-template-columns: 20rem;
-	grid-template-rows: auto auto 30rem 2rem;
+	grid-template-rows: auto 30rem auto;
 	position: relative;
 }
 .DO-p-wrapper{
 	display: grid;
 	grid-template-columns: 20rem;
-	grid-template-rows: auto auto 30rem 2rem;
-	grid-row: 1/7;
+	grid-template-rows:  auto 26rem ;
+	grid-row: 2/3;
 	position: absolute;
-	z-index: 1;
-}
-.DO-p-layout{
-	display: grid;
-	grid-template-columns: 20rem;
-	grid-template-rows: auto 30rem 2rem;
-	display: none;
+	z-index: 2;
 }
 
 .DO-p .dev-rack-wrapper{

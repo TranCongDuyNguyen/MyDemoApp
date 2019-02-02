@@ -12,11 +12,14 @@
     border: unset;
     outline: unset;
     background-color: #EEE;
+    position: absolute;
+    z-index: 5;
 }
 
 
 .heading-panel .title{
-	padding-bottom: 8px;
+	padding-bottom: 22px;
+    padding-left: 10px;
 }
 .heading-panel .wrapper{
 	display: flex;
@@ -110,8 +113,8 @@
 	font-family: Arial, sans-serif;
 	width: 230px;
 	background-color: #FFF;
-	grid-row: 1/7;
-	z-index: 2;
+	grid-row: 2/3;
+	z-index: 1;
 	position: absolute;
 	opacity: 0;	
 }
@@ -168,20 +171,18 @@
 }
 .active-menu{
 	opacity: 1;
+	z-index: 3;
 }
-.active-DO-layout{
-	visibility: initial !important ;
-}
+
 .disable-DO-wrapper{
-	opacity: 0;
+	background-color: #AAA;
 }
 
 .disable-menu{
 	opacity: 0;
+	z-index: 1;
 }
-.disable-DO-layout{
-	visibility: hidden; !important ;
-}
+
 .active-DO-wrapper{
-	opacity: 1;
+	background-color: none;
 }
